@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    Smart Home
+</head>
+<body style="background-color:powderblue;">
+    <h1>Home devices</h1>
+    <ul>
+        <li>Cabinet</li>
+        <li>Masha's room</li>
+        <li>Kitchen</li>
+        <li>Hall</li>
+        <script>
+            function light(sw) {
+            var pic;
+            if (sw == 0) {
+              pic = "pic_bulboff.gif"
+              } else {
+              pic = "pic_bulbon.gif"
+              }
+             document.getElementById("images").src = pic;
+           }
+           </script>
+        <img id="images" src="pic_bulboff.gif" width="100" height="180">
+        <p>
+            <button type="button" onclick="light(1)">Light On</button>
+            <button type="button" onclick="light(0)">Light Off</button>
+        </p>
+    </ul>
+    <p><img src="images/smh.png" alt="My house" style="width:200px;height= 300px;"></p>
+</body>
+</html>
